@@ -1,0 +1,44 @@
+.header {
+    background-color: #181617;
+}
+
+.header__menu-item a{
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    opacity: 20%;
+}
+.header__menu-item a:hover{
+    color: #fff;
+    opacity: 100;
+}
+
+.header__menu-item{
+    display: inline;
+}
+
+.header__title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 52px;
+    line-height: 0.5;
+  }
+
+.header__text span,p{
+    color: #A07B50;
+    font-size: 16px;
+    font-family: "Robototo", "Arial", sans-serif;
+}
+
+.open__cat {
+    font-family: "Robotobold", "Arial", sans-serif;
+    color: #fff;
+    border: 1px solid #A07B50;
+    font-size: 14px;
+}
+
+.logo {
+    color: #A07B50;
+}
+
