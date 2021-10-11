@@ -1,3 +1,82 @@
 .our-team {
     background-color: #151313;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+.our-team__description {
+    position: relative;
+    max-width: 510px;
+    color: #A07B50;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    padding-bottom: 15px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.our-team__information {
+    background-color: #1F1C1D;
+    width: 600px;
+    height: 356px;
+    padding-top: 40px;
+    padding-left: 120px;
+
+}
+
+.our-team_block{
+    border: 0.5px solid #A07B506E;
+    width: 660px;
+    height: 402px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: -48px;
+    z-index: 1;
+}
+
+.our-team__sector-name{
+    color: #A07B50;
+    font-size: 24px;
+    font-family: "Robotomedium", "Arial", sans-serif;
+    font-style: normal;
+    margin: 0;
+}
+
+.our-team__img {
+    z-index: 5;
+}
+
+.our-team__sector {
+    display: flex;
+    justify-content: center;
+}
+
+
+.our-team__sector-title{
+    color: #A07B50;
+    font-size: 16px;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-style: normal;
+    margin-top: 8px;
+}
+
+
+.our-team__sector-description{
+    color: #FFFFFFB8;
+    opacity: 72%;
+    max-width: 400px;
+    font-family: "Robotolight", "Arial", sans-serif;
+    font-style: normal;
+    margin-top: 35px;
+    line-height: 1.5;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70px;
+    padding-top: 30px;
 }

@@ -1,44 +1,112 @@
 .header {
     background-color: #181617;
+    background-image: url("../img/header-cat.png");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    padding-top: 28px;
+    position: relative;
+    z-index: 3;
+    height: auto;
 }
 
-.header__menu-item a{
-    font-family: "Roboto","Arial",sans-serif;
-    font-weight: 500;
+.navbar {
+    display: flex;
+    align-items: center;
+    z-index: 2;
+    
+}
+
+.navbar__menu {
+    width: 50%;
+}
+
+.navbar__menu-list {
+    display: flex;
+    align-items: flex-start;
+    list-style-type: none;
+    margin-left: 60px;
+    padding-top: 15px;
+}
+
+.navbar__menu-link {
+    color: #fff;
+    opacity: 0.2;
     font-size: 18px;
-    color: #fff;
-    opacity: 20%;
-}
-.header__menu-item a:hover{
-    color: #fff;
-    opacity: 100;
-}
-
-.header__menu-item{
-    display: inline;
+    transition: all 0.3s ease;
+    padding: 20px 50px 20px 0;
+    &:hover {
+        opacity: 1;
+    }
 }
 
-.header__title {
-    font-style: normal;
-    font-weight: normal;
+.navbar__logo-icon{
+    fill: #A07B50;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+
+.intro {
+    position: relative;
+    padding-top: 40px;
+    padding-left: 120px;
+}
+
+.intro__content {
+    width: 40%;
+    padding: 50px 0;
+    text-align: left;
+}
+
+.intro__content-title {
     font-size: 52px;
-    line-height: 0.5;
-  }
-
-.header__text span,p{
-    color: #A07B50;
-    font-size: 16px;
-    font-family: "Robototo", "Arial", sans-serif;
+    margin: 0;
+    padding: 20px 0;
+    width: 80%;
 }
 
-.open__cat {
-    font-family: "Robotobold", "Arial", sans-serif;
-    color: #fff;
-    border: 1px solid #A07B50;
-    font-size: 14px;
+.intro__content-description{
+    width: 60%;
+    line-height: 24px;
+    padding: 0;
+    margin: 0;
 }
 
-.logo {
-    color: #A07B50;
+.intro__socials{
+    transform: translateX(-125px);
+    display: flex;
 }
 
+.intro__socials-list{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 30px 0px;
+    margin-left: -40px;
+    &::before{
+        content: '';
+        position: absolute;
+        width: 0.5px;
+        height: 100px;
+        color:rgba(255, 255, 255, 0.61);
+        background-color: rgba(255, 255, 255, 0.61);
+        top:-90px;
+        left: 10px;   
+        margin-left: -40px;
+    }
+}
+
+.intro__socials-item{
+    padding: 7px 0;
+}
+
+.intro__social-icon{
+    fill: #fff;
+    transition: fill .3s ease;
+    &:hover{
+        fill: #A07B50;
+    }
+}
+  
