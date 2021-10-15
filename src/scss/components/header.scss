@@ -7,6 +7,9 @@
     right: 0;
     bottom: -3px;
     z-index: 1;
+    @media (max-width: $tablet-width) {
+        position: relative;
+    }
   }
   
   .header__cat img {
@@ -69,13 +72,13 @@
         display: flex;
         position: static;
         margin-left: 20px;
-        //margin-bottom: 45px;
     }
     @media (max-width: $tablet-width){
         display: none;
     }
 }
 .header__title{
+    font-size: 52px;
     @media (max-width: $large-width) {
         margin-top: 20px;
         margin-bottom: 30px;
@@ -86,6 +89,7 @@
         text-align: center;
         margin-top: 20px;
         margin-bottom: 30px;
+        font-size: 36px;
     }
 }
 .header__text{
