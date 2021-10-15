@@ -21,6 +21,12 @@
     justify-content: space-between;
     gap: 60px;
     margin: 0;
+    @media (max-width:$large-width) {
+        position: relative;
+       max-width: 360px;
+       left: 50%;
+       transform: translateX(-50%);
+    }
 }
 .why-us__menu-item{
     width: 360px;
@@ -52,8 +58,41 @@
     text-align: center;
 }
 
-
-
+@media (max-width: 767px) {
+    .container {
+        position: relative;
+        width: 320px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .why-us__menu-item{
+        width: 290px;
+        height: 248px;
+    }
+    .why-us__menu{
+        gap: 40px;
+    }
+    .point__link{
+        width: 260px;
+        height: 218px;
+    }
+    .title-sector__description {
+        font-size: 14px;
+        width: 290px;
+    }
+    .point__link--one {
+        width: 80px;
+        height: 88px;
+    }
+    .point__link--two {
+        width: 80px;
+        height: 71px;
+    }
+    .point__link--three {
+        width: 57px;
+        height: 88px;
+    }
+}
 
    
     

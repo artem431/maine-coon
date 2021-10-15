@@ -1,0 +1,204 @@
+.pets {
+    position: relative;
+    background-color: #1F1C1D;
+    width: 1100px;
+    margin-top: 220px;
+    margin-bottom: 80px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.pets__title {
+    margin-bottom: 23px;
+}
+
+.pets__subtitle {
+    position: relative;
+    max-width: 530px;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+    line-height: 1.5;
+}
+
+.pets__descr {
+    max-width: 520px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    font-weight: 300;
+    line-height: 26px;
+    color: #A07B50;
+}
+
+.pets__list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+    left: 44%;
+    transform: translateX(-50%);
+    padding-bottom: 10px;
+}
+
+.pets__item button {
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 500;
+    opacity: 0.2;
+    padding: 0 25px 0 25px;
+}
+
+.pets__item button:hover {
+    opacity: 1;
+}
+
+.pets__button {
+    margin: 0 auto;
+}
+
+.pets__photo--inner {
+    display: grid;
+    grid-template-columns: 517px 471px;
+    grid-template-rows: 214px 241px;
+    grid-row-gap: 30px;
+    grid-column-gap: 35px;
+    margin-bottom: 55px;
+}
+
+.pets__photo--inner:nth-child(2) {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.pets__arrow {
+    display: none;
+}
+
+@media (max-width: $large-width){
+    .pets {
+        width: 720px;
+        margin-top: 108px;
+        margin-bottom: 80px;
+    }
+    .pets__list {
+        left: 41%;
+    }
+    .pets__slider {
+        position: relative;
+        margin-bottom: 56px;
+    }
+    .pets__photo--wrapper {
+        position: relative;
+        height: 485px;
+        width: 603px;
+        margin: 0 30px;
+    }
+    .pets__photo--inner {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 485px;
+        width: 100%;
+    }
+    .pets__photo {
+        position: absolute;
+        -webkit-transition: all .3s;
+        transition: all .3s;
+    }
+    .pets__photo--left,
+    .pets__photo--right {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+        z-index: 0;
+    }
+    .pets__photo--left {
+        transform-origin: 0 center;
+        left: 0;
+    }
+    .pets__photo--right {
+        transform-origin: 100% center;
+        right: 0;
+    }
+    .pets__photo--center {
+        z-index: 1;
+    }
+    .pets__arrow {
+        position: absolute;
+        display: block;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .pets__arrow--left {
+        left: 0px;
+    }
+    .pets__arrow--right {
+        right: 0px;
+    }
+    .pets__slider svg {
+        stroke: #A07B50;
+        fill: #1F1C1D;
+    }
+    .pets__slider svg:hover {
+        stroke: white;
+    } 
+}
+@media (max-width: 767px) {
+    .pets__subtitle {
+        max-width: 290px;
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .pets__title {
+        position: relative;
+        font-size: 28px;
+        line-height: 32px;
+        left: 50%;
+        transform: translateX(-50%);
+        margin: 0;
+        padding-bottom: 15px;
+    }
+    .container {
+        max-width: 320px;
+    }
+    .pets__photo--left {
+        display: none;
+    }
+    .pets__photo--right {
+        display: none;
+    }
+    .pets__photo--center {
+        width: 234px;
+        height: 248px;
+    }
+    .pets__photo--inner {
+        display: grid;
+        grid-template-columns: 234px 248px;
+        grid-template-rows: 0 0;
+        grid-row-gap: 0;
+        grid-column-gap: 0;
+        margin-bottom: 0;
+        width: 234px;
+        height: 248px;
+    }
+    .pets__photo--wrapper {
+        width: 234px;
+        height: 248px;
+    }
+    .pets {
+        width: 320px;
+        margin-top: 60px;
+        margin-bottom: 20px;
+    }
+    .pets__list {
+        left: 27%;
+    }
+    .pets__item button {
+        padding: 0 15px;
+    }
+}

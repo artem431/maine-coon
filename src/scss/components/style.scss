@@ -40,7 +40,7 @@ color: #A07B50;
   font-weight: 400;
 }
 
-.section__title {
+.section-title {
   font-size: 36px;
   font-family: "Yesevaone", "Arial", serif;
   font-weight: 400;
@@ -68,4 +68,73 @@ color: #A07B50;
   &:hover{
       fill: #fff;
   }
+}
+
+.main {
+  background-color: #1F1C1D;;
+}
+
+.section__social {
+  display: flex;
+  width: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section__social svg {
+  fill: white;
+  &:hover {
+      fill: #A07B50;
+  }
+}
+
+.section__button {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.section__button--left {
+  left: -400px;
+}
+
+.section__button--right {
+  right: -100px;
+}
+
+.section__link {
+  fill:#1F1C1D;
+  stroke:#A07B50;
+}
+
+.section__link:hover {
+  stroke: white;
+}
+@media (max-width: $large-width) {
+  .section__button {
+    position: absolute;
+    top: 600px;
+  }
+  .section__button--left {
+    left: 250px;
+  }
+  .section__button--right {
+    right: -10px;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .section__button {
+    top: -12px;
+  }
+  .section__button--left {
+    left: calc(50% - 90px);
+  }
+  .section__button--right {
+    left: calc(50% + 10px);
+  }
+  .section__social {
+    margin-left: 35%;
+}
 }

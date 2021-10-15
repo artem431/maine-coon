@@ -1,0 +1,154 @@
+.team {
+    background-color: #181617;
+    padding: 80px 185px 70px;
+}
+
+.team__title {
+    margin-bottom: 20px;
+}
+
+.team__subtitle {
+    max-width: 510px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    text-align: center;
+    line-height: 26px;
+    color:#A07B50;
+}
+
+.team__block {
+    position: relative;
+    margin: 0 auto;
+    background-color: #1F1C1D;
+    width: 660px;
+    border: 24px solid #181617;
+    outline: 0.5px solid #674C33;
+    left: 155px;
+    padding: 70px 100px;
+}
+
+.team__block-content {
+    display: none;
+    opacity: 0;
+}
+
+.team__block-content--active {
+    display: block;
+    opacity: 1;
+}
+
+.team__name {
+    margin-bottom: 10px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #A07B50;
+}
+
+.team__descr {
+    color: #FFFFFFB8;    ;
+    margin-bottom: 45px;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.team__photo-wrapper {
+    position: absolute;
+    overflow: hidden;
+    width: 360px;
+    height: 356px;
+    left: -332px;
+    top: -26px;
+}
+
+.team__photo-inner {
+    display: flex;
+    z-index: 20;
+}
+
+.team__post {
+    color:#A07B50;
+    margin-bottom: 25px;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:$large-width) {
+    .team {
+        padding: 80px 50px 195px;
+    }
+    .team__block {
+        width: 600px;
+        left: 0;
+        z-index: 1;
+    }
+    .team__photo-wrapper {
+        left: 290px;
+        top: 350px;
+        z-index: 5;
+    }
+    .team__photo {
+        width: 230px;
+        height: 260px;
+        z-index: 20;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .team {
+        padding: 60px 15px;
+    }
+    .team__title {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    .team__subtitle {
+        width: 252px;
+        margin: 25px auto;
+        margin-bottom: 100px;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 140%;
+    }
+    .team__photo-wrapper {
+        width: 126px;
+        height: 125px;
+        top: -63px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .team__photo {
+        width: 126px;
+        height: 125px;
+    }
+    .team__block {
+        width: 290px;
+        border: 0px solid #181617;
+        outline: 0px solid #674C33;
+        padding: 85px 10px 15px;
+        text-align: center;
+        left: 0;
+    }
+    .team__name {
+        margin-bottom: 8px;
+        font-size: 18px;
+    }
+    .team__post {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+    .team__descr {
+        margin-bottom: 25px;
+        font-size: 14px;
+        line-height: 20px;
+        width: 270px;
+    }
+    
+}
