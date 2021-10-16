@@ -3,18 +3,15 @@
     padding-top: 25px;
     padding-bottom: 80px;
 }
-
 .title-sector__description {
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 16px;
     color: #A07B50;
     padding-bottom: 30px;
 }
-
 .why-us__menu a{
     color: #fff;
 }
-
 .why-us__menu{
     display:flex;
     flex-wrap: wrap;
@@ -48,7 +45,6 @@
     stroke: white;
     }
 }
-
 .why-us__description {
     color: white;
     font-size: 16px;
@@ -57,8 +53,7 @@
     max-width: 233px;
     text-align: center;
 }
-
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
     .container {
         position: relative;
         width: 320px;
@@ -92,8 +87,4 @@
         width: 57px;
         height: 88px;
     }
-}
-
-   
-    
-    
+}  

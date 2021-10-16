@@ -1,16 +1,17 @@
 .breed-features {
     position: relative;
     background-color: #1F1C1D;
-    padding-top: 20px;
+    @media (max-width: $large-width) {
+        padding-bottom: 90px;
+        padding-top: 0;
+    }
 }
-
 .section__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
-
 .breed-features__wrapper {
     position: relative;
     padding-top: 21px;
@@ -19,29 +20,27 @@
         padding-bottom: 0;
     }
 }
-
 .breed-features__title {
     margin-bottom: 20px;
     transform: translateX(10px);
 }
-
 .breed-features__image {
     margin: 0 auto;
     position: relative;
     z-index: 1;
     transform: translateX(33px);
     @media (max-width: $large-width) {
-        width: 300px;
+        width: 300px;   
     }
 }
-
 .breed-features__image img {
     width: 602px;
     height: 655px;
     @media (max-width: $large-width) {
         width: 410px;
+        height: 450px;
         margin-left: -30%;
-        margin-top: -6%;
+        margin-top: 15%;
     }
     @media (max-width: $tablet-width) {
         width: 267px;
@@ -49,8 +48,6 @@
         margin: 0;
     }
 }
-
-
 .breed-features__image::before {
     content: "";
     position: absolute;
@@ -69,7 +66,6 @@
         margin-top: 20px;
     }
 }
-
 .breed-features__image::after {
     content: "";
     position: absolute;
@@ -88,14 +84,13 @@
         margin-top: 37px;
     }
 }
-
 .breed-features__subtitle {
     margin-bottom: 23px;
     width: 64%;
     color: #ae7c4c;
     text-align: center;
+    font-family: "Robotolight", "Arial", sans-serif;
 }
-
 .breed-features__list {
     margin: 0;
     padding: 0;
@@ -110,9 +105,8 @@
     font-weight: 300;
     line-height: 25px;
 }
-
 .breed-features__item {
-    font-family: "Roboto", "Arial", sans-serif;
+    font-family: "Robotolight", "Arial", sans-serif;
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
@@ -120,7 +114,6 @@
     color: #ffffff;
     position: relative;
 }
-
 .breed-features__item::before {
     content: "";
     position: absolute;
@@ -129,12 +122,11 @@
     height: 15px;
     background-color: #a07b50;
 }
-
 .breed-features__item-cohabitation {
     font-size: 14px;
     line-height: 21px;
-    top: 355px;
-    left: -409px;
+    top: 370px;
+    left: -405px;
     max-width: 255px;
     text-align: right;
     @media (max-width:$large-width) {
@@ -145,7 +137,6 @@
         
     }
 }
-
 .breed-features__item-cohabitation::before {
     right: -39px;
     border-radius: 15px;
@@ -154,9 +145,8 @@
         height: 10px;
     }
 }
-
 .breed-features__item-instruction {
-    top: 411px;
+    top: 430px;
     right: -482px;
     max-width: 201px;
     @media (max-width:$large-width) {
@@ -166,7 +156,6 @@
         top: 240px;
     }
 }
-
 .breed-features__item-instruction::before {
     top: 3px;
     left: -36px;
@@ -176,10 +165,9 @@
         height: 10px;
     }
 }
-
 .breed-features__item-weight {
     top: 603px;
-    right: -441px;
+    right: -450px;
     width: 170px;
     @media (max-width:$large-width) {
        width: 115px;
@@ -189,7 +177,6 @@
        left: 240px;
     }
 }
-
 .breed-features__item-weight::before {
     border-radius: 15px;
     top: 6px;
@@ -199,11 +186,10 @@
         height: 10px;
     }
 }
-
 .breed-features__item-appearance {
     max-width: 200px;
     top: 520px;
-    left: -367px;
+    left: -374px;
     text-align: right;
     @media (max-width:$large-width) {
         position: absolute;
@@ -212,7 +198,6 @@
         top: 370px;
     }
 }
-
 .breed-features__item-appearance::before {
     right: -31px;
     border-radius: 15px;
@@ -221,11 +206,6 @@
         height: 10px;
     }
 }
-
-.section__lead {
-    color: #A07B5078;
-}
-
 @media (max-width:$large-width) {
     .breed-features__picture  {
         position: relative;
@@ -238,8 +218,7 @@
         left: -30px;
     }
 }
-
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
     .breed-features {
         position: relative;
         width: 320px;
@@ -250,12 +229,11 @@
     .breed-features__title {
         font-size: 28px;
         text-align: center; 
-        left: 50%;
+        margin-left: -5%;
     }
     .breed-features__image {
         width: 267px;
-        margin: 0;
-        transform: none;
+        margin-left: 0;
     }
     .breed-features__subtitle {
         font-size: 14px;
@@ -270,7 +248,6 @@
         left: 59%;
         top: 25px;
     }
-    
     .breed-features__image::after {
         width: 280px;
         height: 280px;

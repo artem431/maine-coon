@@ -1,8 +1,8 @@
 .care {
+    background-color: #1F1C1D;
     background-image: url("../img/care-maine-coon.png");
     background-repeat: no-repeat;
-    background-color: #1F1C1D;
-    background-size: 100%;
+    background-size: 100% 100%;
     padding-top: 70px;
     padding-bottom: 110px;
     @media (max-width:$large-width) {
@@ -10,11 +10,9 @@
        background-size: 100% 100%;
     }
 }
-
 .care-maine-coon__title {
     text-align: center;
 }
-
 .care-menu__description {
     color: #fff;
     font-family: "Robotolight", "Arial", sans-serif;
@@ -25,7 +23,6 @@
         margin-left: 40px;
     }
 }
-
 .care-menu {
     display: flex;
     flex-wrap: wrap;
@@ -37,15 +34,12 @@
         gap: 20px;
     }
 }
-
 .care-menu__item {
     position:relative;
     width: 565px;
-    height: 100%;
+    min-height: 165px;
     border: 0.5px solid #A07B50;
 }
-
-
 .care-menu__block::after{
     position: absolute;
     background-color: #A07B50;
@@ -59,7 +53,6 @@
     align-items: center;
     justify-content: center;
 }
-
 .care-menu_title {
     color: #A07B50;
     font-size: 22px;
@@ -70,18 +63,14 @@
         margin-left: 40px;
     }
 }
-
-
 .care-menu__item:hover {
     background-color: #151313;
     .care-menu__block::after{background-color: #151313};
 }
-
 .care__title {
     margin-bottom: 40px;
 }
-
-@media (max-width: 767px) {
+@media (max-width: $tablet-width) {
     .container {
         width: 320px;
         left: 50%;
