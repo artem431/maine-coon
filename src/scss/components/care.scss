@@ -10,9 +10,6 @@
        background-size: 100% 100%;
     }
 }
-.care-maine-coon__title {
-    text-align: center;
-}
 .care-menu__description {
     color: #fff;
     font-family: "Robotolight", "Arial", sans-serif;
@@ -22,6 +19,9 @@
     @media (max-width:$large-width) {
         margin-left: 40px;
     }
+}
+.care-maine-coon__title {
+    text-align: center;
 }
 .care-menu {
     display: flex;
@@ -33,12 +33,6 @@
         justify-content: center;
         gap: 20px;
     }
-}
-.care-menu__item {
-    position:relative;
-    width: 565px;
-    min-height: 165px;
-    border: 0.5px solid #A07B50;
 }
 .care-menu__block::after{
     position: absolute;
@@ -52,6 +46,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.care-menu__item {
+    position:relative;
+    width: 565px;
+    min-height: 165px;
+    border: 0.5px solid #A07B50;
 }
 .care-menu_title {
     color: #A07B50;
