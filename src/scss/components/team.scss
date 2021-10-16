@@ -2,11 +2,9 @@
     background-color: #181617;
     padding: 80px 185px 70px;
 }
-
 .team__title {
     margin-bottom: 20px;
 }
-
 .team__subtitle {
     max-width: 510px;
     margin: 0 auto;
@@ -15,7 +13,6 @@
     line-height: 26px;
     color:#A07B50;
 }
-
 .team__block {
     position: relative;
     margin: 0 auto;
@@ -26,31 +23,27 @@
     left: 155px;
     padding: 70px 100px;
 }
-
 .team__block-content {
     display: none;
     opacity: 0;
 }
-
 .team__block-content--active {
     display: block;
     opacity: 1;
 }
-
 .team__name {
     margin-bottom: 10px;
     font-size: 24px;
     font-weight: 500;
     color: #A07B50;
 }
-
 .team__descr {
     color: #FFFFFFB8;    ;
     margin-bottom: 45px;
     font-weight: 300;
     line-height: 25px;
+    font-family: "Robotolight", "Arial", sans-serif;
 }
-
 .team__photo-wrapper {
     position: absolute;
     overflow: hidden;
@@ -59,17 +52,14 @@
     left: -332px;
     top: -26px;
 }
-
 .team__photo-inner {
     display: flex;
     z-index: 20;
 }
-
 .team__post {
     color:#A07B50;
     margin-bottom: 25px;
 }
-
 @keyframes fade {
     0% {
         opacity: 0;
@@ -78,7 +68,6 @@
         opacity: 1;
     }
 }
-
 @media (max-width:$large-width) {
     .team {
         padding: 80px 50px 195px;
@@ -99,7 +88,6 @@
         z-index: 20;
     }
 }
-
 @media (max-width: $tablet-width) {
     .team {
         padding: 60px 15px;
@@ -138,6 +126,7 @@
     }
     .team__name {
         margin-bottom: 8px;
+        font-family: "R";
         font-size: 18px;
     }
     .team__post {

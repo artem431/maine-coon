@@ -3,8 +3,11 @@
     padding-top: 73px;
     padding-bottom: 3px;
     @media (max-width: $large-width) {
-        padding-top: 130px;
-        padding-bottom: 70px;
+        padding-top: 70px;
+    }
+    @media (max-width: $tablet-width) {
+        padding-top: 30px;
+        padding-bottom: 40px;
     }
 }
 .Q-A-list__point{
@@ -12,6 +15,7 @@
 }
 .question{
     color: white;
+    font-family: "Robotomedium", "Arial", sans-serif;
     @media (max-width: $large-width) {
         max-width: 380px;
     }
@@ -27,6 +31,7 @@
     border-style: solid;
     border-top: 0;
     padding: 40px;
+    font-family: "Robotomedium", "Arial", sans-serif;
     @media (max-width: $large-width) {
         padding:25px;
     }  
@@ -38,6 +43,7 @@
 .Q-A__sub-title{
     margin-top: 23px;
     margin-bottom: 53px;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 .Q-A__list-container{
     max-width: 793px;
@@ -51,6 +57,8 @@
     } 
 }
 .answer__text{
+    color: #ddd0c3;
+    font-family: "Robotolight", "Arial", sans-serif;
     @media (max-width: $large-width) {
         max-width: 400px;
     } 
@@ -159,14 +167,19 @@
         content: "";
     }
 }
-
 .Q-A__question-link{
     margin-left: 71%;
     @media (max-width: $large-width) {
-        margin-left: 69%;
+        position: relative;
+        margin-left: 485px;
+        margin-right: 0;
     }
     @media (max-width: $tablet-width){
-        margin-left: 41%;
+        position: relative;
+        float: right;
+        padding: 18px 20px;
+        width: 160px;
+        margin-left: 0;
     }
 }
 .Q-A__list{
@@ -182,7 +195,6 @@
         padding-left: 0px;
     }
 }
-
 @media (max-width: $large-width) {
     .Q-A{
         position: relative;
@@ -194,11 +206,9 @@
         margin-left: 30px;
     }
 }
-
 .answer-plus {
     display: none;
 }
-
 .plus-answer::before{
     content: "+";
     font-size: 36px;
@@ -206,7 +216,6 @@
     background-color: #1f1c1d;
     color: #a07b50;
 }
-
 .answer{
     color: white;
     border-color: #a07b50;
@@ -222,14 +231,13 @@
         padding:15px;
     }
 }
-
 .plus::before {
     position: absolute;
     background-color: #1f1c1d;
     border: 0.5px solid #a07b50;
     content: "+";
     color: #a07b50;
-    font-size: 70px;
+    font-size: 36px;
     font-family: "Roboto","Arial",sans-serif;
     font-weight: 300;
     width: 105px;
@@ -250,7 +258,6 @@
         font-size: 36px;
     }
 }
-
 .reviews__info {
     left: 50%;
 }

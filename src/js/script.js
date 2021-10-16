@@ -27,6 +27,46 @@ var onHeaderBurgerBtnClick = (evt) => {
     }
 };
 
+hideMenu();
+
+headerBurgerButton.addEventListener("click", onHeaderBurgerBtnClick);
+
+var modalOpenButton = document.querySelector(".Q-A__question-link");
+var modalForm = document.querySelector(".modal");
+var modalCloseButton = document.querySelector(".modal-close");
+
+var openModal = () => {
+    modalForm.classList.remove("modal-write");
+};
+var closeModal = () => {
+    modalForm.classList.add("modal-write");
+};
+
+var onCloseBtnClick = (evt) => {
+    closeModal();
+    removeModalListeners();
+};
+
+var onShowBtnClick = (evt) => {
+    evt.preventDefault();
+    openModal();
+    initModalListeners();
+};
+
+var onModalKeyDown = (evt) => {
+    if (evt.keyCode === 27) {
+        evt.preventDefault();
+        onCloseBtnClick();
+    };
+};
+
+var onModalOutLineClick = (evt) => {
+    if (evt.target == modalForm) {
+        onCloseBtnClick();
+    }
+};
+
+modalOpenButton.addEventListener("click", onShowBtnClick);
 
 var removeModalListeners = () => {
     modalCloseButton.removeEventListener("click", onCloseBtnClick);
@@ -55,44 +95,3 @@ for (let index = 0; index < questionButtons.length; index++) {
     }
     )
 }
-
-hideMenu();
-
-headerBurgerButton.addEventListener("click", onHeaderBurgerBtnClick);
-
-var modalOpenButton = document.querySelector(".Q-A__question-link");
-var modalForm = document.querySelector(".modal");
-var modalCloseButton = document.querySelector(".modal__close-button");
-
-var openModal = () => {
-    modalForm.classList.remove("hide-element");
-};
-var closeModal = () => {
-    modalForm.classList.add("hide-element");
-};
-
-var onCloseBtnClick = (evt) => {
-    closeModal();
-    removeModalListeners();
-};
-
-var onShowBtnClick = (evt) => {
-    evt.preventDefault();
-    openModal();
-    initModalListeners();
-};
-
-var onModalKeyDown = (evt) => {
-    if (evt.keyCode === 27) {
-        evt.preventDefault();
-        onCloseBtnClick();
-    };
-};
-
-var onModalOutLineClick = (evt) => {
-    if (evt.target == modalForm) {
-        onCloseBtnClick();
-    }
-};
-
-modalOpenButton.addEventListener("click", onShowBtnClick);

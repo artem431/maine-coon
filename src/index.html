@@ -325,10 +325,10 @@
                         <a href="#home" class="header__menu-link">Главная</a>
                     </li>
                     <li>
-                        <a href="#" class="header__menu-link">Питомник</a>
+                        <a href="#pets" class="header__menu-link">Питомник</a>
                     </li>
                     <li>
-                        <a href="#" class="header__menu-link">Контакты</a>
+                        <a href="#contact" class="header__menu-link">Контакты</a>
                     </li>
                 </ul>
                 <button class="header__button header__button--hide hide-element">
@@ -342,7 +342,7 @@
                 </button>
             </nav>
             <a href="#home" class="header__logo logo">
-                <svg class="svg-logo" height="26" width="57" viewBox="0 0 57 26">
+                <svg class="header__logo-svg" height="25" width="54" viewBox="0 0 57 26">
                     <use xlink:href="#logo"></use>
                 </svg>
             </a>
@@ -380,12 +380,12 @@
             <picture>
               <source type="image/webp" media="(max-width: 767px)"
                 srcset="img/main-cat-mobile@1x.webp 1x, img/main-cat-mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)"
+              <source type="image/webp" media="(max-width: 1366px)"
                 srcset="img/main-cat-tablet@1x.webp 1x, img/main-cat-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/main-cat-desktop@1x.webp 1x, img/main-cat-desktop@2x.webp 2x">
-      
+              
               <source media="(max-width: 767px)" srcset="img/main-cat-mobile@1x.png 1x, img/main-cat-mobile@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/main-cat-tablet@1x.png 1x, img/main-cat-tablet@2x.png 2x">
+              <source media="(max-width: 1366px)" srcset="img/main-cat-tablet@1x.png 1x, img/main-cat-tablet@2x.png 2x">
               <img src="img/main-cat-desktop@1x.png" srcset="img/main-cat-desktop@2x.png 2x" alt="Мейн Кун">
             </picture>
           </div>
@@ -435,11 +435,12 @@
                     <div class="breed-features__content">
                         <div class="breed-features__image">
                             <picture class="breed-features__picture">
+                                <source type="image/webp" srcset="img/breed-features-desktop@1x.webp 1x, img/breed-features-desktop@2x.webp 2x">
+                                <source type="image/webp" media="(max-width: 1366px)" srcset="img/breed-features-tablet@1x.webp 1x, img/breed-features-tablet@2x.webp 2x">
+                        
                                 <source media="(max-width: 767px)" srcset="img/bread-feature-mobile.png">
                                 <source media="(max-width: 1366px)" srcset="img/FeatureCat-tablet@1x.png">
-                                <img src="img/breed-features-desktop@1x.png"
-                                    srcset="img/breed-features-desktop@2x.png 2x" alt="redhead-maine-coon"
-                                   >
+                                <img src="img/breed-features-desktop@1x.png" srcset="img/breed-features-desktop@2x.png 2x" alt="redhead-maine-coon">
                             </picture>
                         </div>
                         <ul class="breed-features__list">
@@ -555,8 +556,12 @@
                         <div class="team__photo-wrapper">
                             <div class="team__photo-inner">
                                 <picture>
-                                    <source media="(max-width: 1365px)" srcset="img/team-tablet.png">
-                                    <img class="team__photo" src="img/employee-1-desktop.jpg" alt="Фото Сережи Попова"
+                                    <source type="image/webp" media="(max-width: 767px)" srcset="img/team-mobile@1x.webp 1x, img/team-mobile@2x.webp 2x">
+                                    <source type="image/webp" media="(max-width: 1365px)" srcset="img/team-tablet@1x.webp 1x, img/team-tablet@2x.webp 2x">
+                                    <source type="image/webp" srcset="img/team-desktop@1x.webp 1x, img/team-desktop@2x.webp 2x">
+
+                                    <source media="(max-width: 1366px)" srcset="img/team-tablet@1x.jpg 1x, img/team-tablet@2x.jpg 2x">
+                                    <img class="team__photo" src="img/employee-1-desktop.jpg" srcset="img/team-desktop@2x.jpg 2x" alt="Фото Сережи Попова"
                                         width="360" height="356">
                                 </picture>
                             </div>
@@ -611,7 +616,7 @@
         <section class="Q-A">
             <div class="container center-container">
                 <div class="title-sector">
-                    <h2 class="sector-heading">Вопрос-Ответ</h2>
+                    <h2 class="sector-heading section-title">Вопрос-Ответ</h2>
                     <p class="default-subtitle Q-A__sub-title">Мы ответим на самые популярные ваши вопросы</p>
                 </div>
                 <ol class="Q-A__list">
@@ -690,10 +695,15 @@
                     <h2 class="reviews__sector-heading section-title">Отзывы</h2>
                 </div>
                 <div class="reviews__employee-container">
+                    
                     <picture class="reviews__photo-human">
-                        <source srcset="img/reviewer-tablet.png" media="(max-width: 1365px)">
-                        <img src="img/reviewer-desktop.jpg" srcset="img/reviewer-desktop.jpg"
-                            alt="photo-who-left-the-review" width="481" height="331">
+                        <source type="image/webp" media="(max-width: 767px)" srcset="img/recall-mobile@1x.webp 1x, img/recall-mobile@2x.webp 2x">
+                        <source type="image/webp" media="(max-width: 1365px)" srcset="img/recall-tablet@1x.webp 1x, img/recall-tablet@2x.webp 2x">
+                        <source type="image/webp" srcset="img/recall-desktop@1x.webp 1x, img/recall-desktop@2x.webp 2x">
+
+                        <source media="(max-width: 767px)" srcset="img/recall-mobile@1x.jpg 1x, img/recall-mobile@2x.jpg 2x">
+                        <source media="(max-width: 1366px)" srcset="img/recall-tablet@1x.jpg 1x, img/recall-tablet@2x.jpg 2x">
+                        <img class="feedback__photo" src="img/recall-desktop@1x.jpg" srcset="img/recall-desktop@2x.jpg 2x" alt="Фото Сережи Попова" width="481" height="331">
                     </picture>
                     <div class="reviews__info">
                         <div class="reviews__info-about-human">
@@ -773,30 +783,35 @@
             <a class="main-footer__tel" href="tel:+73839006465">+7 (383) 900-64-65</a>
         </div>
     </footer>
-    <div class="modal hide-element">
-        <form action="#" class="modal__window ">
-            <h2 class="modal__title">Заказать звонок</h2>
-            <button type="button" class="modal__close-button">
-                <span class="visually-hidden">close-modal</span>
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M15.7331 1.55576C16.089 1.19986 16.089 0.622828 15.7331 0.266927C15.3772 -0.0889751 14.8001 -0.0889757 14.4442 0.266926L7.9999 6.71127L1.55576 0.267132C1.19986 -0.0887695 0.622828 -0.0887694 0.266926 0.267132C-0.0889751 0.623034 -0.0889757 1.20006 0.266926 1.55597L6.71106 8.0001L0.267062 14.4441C-0.0888393 14.8 -0.0888392 15.377 0.267062 15.7329C0.622964 16.0888 1.19999 16.0888 1.5559 15.7329L7.9999 9.28894L14.4441 15.7331C14.8 16.089 15.377 16.089 15.7329 15.7331C16.0888 15.3772 16.0888 14.8002 15.7329 14.4443L9.28873 8.0001L15.7331 1.55576Z"
-                        fill="#A07B50" />
-                </svg>
-            </button>
-            <p class="modal__text">Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
-            <div class="modal__form-input">
-                <label class="modal__question modal__question-name" for="name">Как к вам обращаться?</label>
-                <input class="modal__field" type="text" id="name" name="name" maxlength="10" placeholder="Введите имя">
-                <label class="modal__question modal__question-phone" for="phone">Номер телефона</label>
-                <input class="modal__field" type="tel" id="phone" name="phone" maxlength="16"
-                    placeholder="+7(___) ___-__-__" pattern="+7[0-9]{10}">
-                <p class="modal__warning">Нажимая на кнопку "Заказать звонок", я даю <a href="#"
-                        class="warning__link">согласие на обработку персональных данных</a></p>
-                <button type="submit" class="modal__send-call">Заказать звонок</button>
-            </div>
-        </form>
-    </div>
+    <section class="modal modal-write">
+        <div class="modal__container">
+            <h2 class="modal__title title">Заказать звонок</h2>
+            <p class="modal__subtitle">Отвечаем и звоним каждый день, с 10:00 до 24:00</p>
+            <form class="modal__write-us" action="https://echo.htmlacademy.ru" method="post">
+                <div class="modal__form-container">
+                    <div class="modal__user-data">
+                        <p class="modal__user-name">
+                            <label for="user-name">Как к вам обращаться?</label>
+                            <input type="text" name="name" id="user-name" placeholder="Введите имя">
+                        </p>
+                        <p>
+                            <label for="user-number">Номер телефона</label>
+                            <input type="tel" name="number" id="user-number" placeholder="+7 ( _ _ _ ) _ _ _-_ _-_ _">
+                        </p>
+                    </div>
+                    <div class="modal__user-personal">
+                        <p class="modal__user-consent">
+                            Нажимая на кнопку "Заказать звонок", я даю <a class="modal__personal" href="#">согласие на обработку персональных данных</a>
+                        </p>
+                        <div class="modal-control">
+                            <button class="button writeus-button" type="submit">Заказать звонок</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <button class="modal-close" type="button">Закрыть</button>
+        </div>
+    </section>
 </body>
 
 </html>
